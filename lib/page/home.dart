@@ -140,7 +140,7 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Colour Combination",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
@@ -169,7 +169,7 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Flag",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
@@ -206,7 +206,7 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Animals & Birds",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
@@ -235,7 +235,7 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Plants & Flowers",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
@@ -272,7 +272,7 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Fruits & Vegetables",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
@@ -301,7 +301,7 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Historical Places",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
@@ -338,7 +338,7 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Body Parts",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
@@ -367,7 +367,139 @@ class _HomeState extends State<Home> {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              "Place",
+                              "Person",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20.0,),
+              Padding(
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Material(
+                      borderRadius: BorderRadius.circular(20),
+                      elevation: 5.0,
+                      child: Container(
+                        width: 150,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "images/photo.jpeg",
+                              height: 80,
+                              width: 80,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 20.0),
+                            Text(
+                              "Body Parts",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    Material(
+                      borderRadius: BorderRadius.circular(20),
+                      elevation: 5.0,
+                      child: Container(
+                        width: 150,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "images/photo.jpeg",
+                              height: 80,
+                              width: 80,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 20.0),
+                            Text(
+                              "Person",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20.0,),
+              Padding(
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Material(
+                      borderRadius: BorderRadius.circular(20),
+                      elevation: 5.0,
+                      child: Container(
+                        width: 150,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "images/photo.jpeg",
+                              height: 80,
+                              width: 80,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 20.0),
+                            Text(
+                              "Shape",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    Material(
+                      borderRadius: BorderRadius.circular(20),
+                      elevation: 5.0,
+                      child: Container(
+                        width: 150,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "images/photo.jpeg",
+                              height: 80,
+                              width: 80,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 20.0),
+                            Text(
+                              "Other",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 22.0,
