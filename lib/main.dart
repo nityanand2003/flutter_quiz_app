@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_aap/page/home.dart';
 import 'package:quiz_aap/page/question.dart';
+import 'package:quiz_aap/page/questions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: Question(), //Home(),
+      home: Question() //Questions(), //Home(),
     );
   }
 }
