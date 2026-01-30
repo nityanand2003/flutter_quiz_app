@@ -41,13 +41,37 @@ class _QuestionState extends State<Question> {
                 ],
               ),
             ),
-            SizedBox(height: 20.0,),
-            Expanded(child: Container(
-              padding: EdgeInsets.only(left: 20.0),
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(60),),
-            )),
-            Container(decoration: BoxDecoration(color: Colors.white)),
+            SizedBox(height: 20.0),
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.only(left: 20.0, right: 20.0),
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 40.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                          "images/photo.jpeg",
+                          height: 300,
+                          width: MediaQuery.of(context).size.width,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
           ],
         ),
       ),
