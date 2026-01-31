@@ -10,6 +10,8 @@ class AdminLogin extends StatefulWidget {
 class _AdminLoginState extends State<AdminLogin> {
   TextEditingController? get usernamecontroller => null;
 
+  TextEditingController? get userpasswordcontroller => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -95,7 +97,7 @@ class _AdminLoginState extends State<AdminLogin> {
                                 ),
                               ),
                             ),
-                            SizedBox(height: 40.0,),
+                            SizedBox(height: 40.0),
                             Container(
                               padding: EdgeInsets.only(
                                 left: 20.0,
@@ -111,7 +113,7 @@ class _AdminLoginState extends State<AdminLogin> {
                               ),
                               child: Center(
                                 child: TextFormField(
-                                  controller: usernamecontroller,
+                                  controller: userpasswordcontroller,
                                   validator: (value) {
                                     if (value == null || value.isEmpty) {
                                       return 'Please Enter Password';
@@ -127,8 +129,26 @@ class _AdminLoginState extends State<AdminLogin> {
                                 ),
                               ),
                             ),
-                            SizedBox(height: 40.0,),
-                            Container()
+                            SizedBox(height: 40.0),
+                            Container(
+                              padding: EdgeInsets.symmetric(vertical: 12.0),
+                              margin: EdgeInsets.symmetric(horizontal: 20.0),
+                              width: MediaQuery.of(context).size.height,
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "LogIn",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
