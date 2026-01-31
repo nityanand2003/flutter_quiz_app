@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_aap/page/admin_login.dart';
 import 'package:quiz_aap/page/home.dart';
 import 'package:quiz_aap/page/question.dart';
 import 'package:quiz_aap/page/questions.dart';
@@ -16,9 +17,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: Home(),
-      //home: Question()
-        //home:  Questions(),
+      //home: Home(),
+      //home: Question(),
+      //home: Questions(),
+      home: AdminLogin(),
     );
   }
 }
