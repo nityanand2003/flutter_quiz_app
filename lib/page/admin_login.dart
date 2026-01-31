@@ -51,45 +51,88 @@ class _AdminLoginState extends State<AdminLogin> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 30.0,),
+                    SizedBox(height: 30.0),
                     Material(
                       elevation: 3.0,
                       borderRadius: BorderRadius.circular(20),
                       child: Container(
-                        height: MediaQuery.of(context).size.height/2.2,
+                        height: MediaQuery.of(context).size.height / 2.2,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: Column(children: [
-                          SizedBox(height: 50,),Container(
-                            padding: EdgeInsets.only(left: 20.0, top: 5.0, bottom: 5.0,),
-                            margin: EdgeInsets.symmetric(horizontal: 20.0),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Color.fromARGB(255, 160, 160, 147)),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Center(
-                              child: TextFormField(
-                                controller: usernamecontroller,
-                                validator: (value) {
-                                  if(value==null || value.isEmpty){
-                                    return 'Please Enter Username';
-                                  }
-                                },
-                                decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Username",
-                                  hintStyle: TextStyle(
-
-                                  )
+                        child: Column(
+                          children: [
+                            SizedBox(height: 50),
+                            Container(
+                              padding: EdgeInsets.only(
+                                left: 20.0,
+                                top: 5.0,
+                                bottom: 5.0,
+                              ),
+                              margin: EdgeInsets.symmetric(horizontal: 20.0),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Color.fromARGB(255, 160, 160, 147),
+                                ),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Center(
+                                child: TextFormField(
+                                  controller: usernamecontroller,
+                                  validator: (value) {
+                                    if (value == null || value.isEmpty) {
+                                      return 'Please Enter Username';
+                                    }
+                                  },
+                                  decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    hintText: "Username",
+                                    hintStyle: TextStyle(
+                                      color: Color.fromARGB(255, 160, 160, 147),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          )
-                        ],),
+                            SizedBox(height: 40.0,),
+                            Container(
+                              padding: EdgeInsets.only(
+                                left: 20.0,
+                                top: 5.0,
+                                bottom: 5.0,
+                              ),
+                              margin: EdgeInsets.symmetric(horizontal: 20.0),
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Color.fromARGB(255, 160, 160, 147),
+                                ),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Center(
+                                child: TextFormField(
+                                  controller: usernamecontroller,
+                                  validator: (value) {
+                                    if (value == null || value.isEmpty) {
+                                      return 'Please Enter Password';
+                                    }
+                                  },
+                                  decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    hintText: "Password",
+                                    hintStyle: TextStyle(
+                                      color: Color.fromARGB(255, 160, 160, 147),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 40.0,),
+                            Container()
+                          ],
+                        ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
