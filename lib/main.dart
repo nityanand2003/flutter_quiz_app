@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_aap/page/add_quiz.dart';
 import 'package:quiz_aap/page/admin_login.dart';
 import 'package:quiz_aap/page/home.dart';
 import 'package:quiz_aap/page/question.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       //home: Home(),
       //home: Question(),
       //home: Questions(),
-      home: AdminLogin(),
+      //home: AdminLogin(),
+      home: AddQuiz()
     );
   }
 }
